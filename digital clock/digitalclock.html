@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div id="clock" class="clock"></div>
+        <button id="toggleFormat">Toggle Format</button>
+        <div>
+            <label for="colorPicker">Change Color:</label>
+            <input type="color" id="colorPicker">
+            <label for="fontSizePicker">Font Size:</label>
+            <input type="range" id="fontSizePicker" min="16" max="72" value="40">
+        </div>
+        <div>
+            <label for="alarmTime">Set Alarm Time:</label>
+            <input type="time" id="alarmTime">
+            <button id="setAlarm">Set Alarm</button>
+        </div>
+        <div id="alarmMessage"></div>
+    </div>
+    <script src="digitalclock.js"></script>
+</body>
+</html>
+

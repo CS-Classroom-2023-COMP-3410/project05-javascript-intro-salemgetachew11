@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Drawing Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drawing Canvas</h1>
+    </header>
+    <div id="toolbar" class="toolbar">
+        <input type="range" id="brush-size" min="1" max="50" value="5" title="Brush Size">
+        <input type="color" id="brush-color" value="#000000" title="Brush Color">
+        <input type="color" id="canvas-color" value="#ffe6f0" title="Canvas Color">
+        <button onclick="undo()" class="tool-button">Undo</button>
+        <button onclick="clearCanvas()" class="tool-button">Clear</button>
+        <button onclick="saveCanvas()" class="tool-button">Save</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

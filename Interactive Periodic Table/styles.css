@@ -1,0 +1,51 @@
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 40px);
+    gap: 2px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+.element {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: thin solid #000;
+}
+
+/* Improved Color Coding by Category */
+.noble-gas { background-color: #FFBCD9; }
+.alkali-metal { background-color: #FF6666; }
+.alkaline-earth { background-color: #F7B3DA; }
+.lanthanoid { background-color: #FF99CC; }
+.actinoid { background-color: #FF99CC; }
+.transition-metal { background-color: #F3D19C; }
+.post-transition { background-color: #CDCDCD; }
+.metalloid { background-color: #C4FCEF; }
+.nonmetal { background-color: #9AFF9A; }
+.halogen { background-color: #A4CBEF; }
+
+.element:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.element-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
